@@ -1,0 +1,401 @@
+/* #region FONTS */
+@font-face {
+    font-family: "Ramilias";
+    src: url("../fonts/Ramilias-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Ramilias";
+    src: url("../fonts/Ramilias-Medium.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Ramilias";
+    src: url("../fonts/Ramilias-Bold.ttf") format("truetype");
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Ramilias";
+    src: url("../fonts/Ramilias-Extra-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style:normal;
+}
+/* #endregion */
+
+body {
+    font-family: "Ramilias", Georgia, serif;
+    color: rgb(27, 76, 38);
+}
+
+#top {
+    width: 100%;
+    margin-bottom: 4em;
+}
+.banner {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* MAIN CONTENT */
+
+.container-main {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto; 
+}
+
+.welcome h1,
+.recipe-box h1,
+.carousel-wrapper h1 {
+    width: 100%;
+    text-align: center;
+    font-weight: 600;
+    letter-spacing: 3px;
+    color: rgb(0, 105, 62);
+    background-color: #f0f0f0;
+    padding: 40px 0;    
+}
+
+.intro {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    margin: 4rem auto;
+    padding: 0 2rem;
+    max-width: 80%;
+}
+
+.intro img {
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    flex-shrink: 0;
+    border-radius: 50%;
+}
+
+.intro img:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.689);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.intro .about {
+    flex: 1;
+    min-width: 280px;
+    font-size: 1.25rem;
+    line-height: 1.6;
+    text-align: justify;
+    font-family: "Ramilias", Georgia, serif;
+    font-weight: 500;
+    padding: 1.5rem;
+    border-radius: 8px;
+    color: rgb(27, 76, 38);
+    background-color: rgba(255, 255, 255, 0.322);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
+}
+
+/* RECIPE CARDS STYLING */
+.recipe-panel {
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 2rem auto;
+    max-width: 90%;
+    border-top:2px solid rgb(53, 94, 59);
+    border-bottom:2px solid rgb(53, 94, 59);
+}
+
+ .recipe-card {
+    color: rgb(27, 76, 38);
+    background-color: white;
+    text-align: justify;
+    margin: 10px;
+    width: 300px;
+    height: 580px;
+    border-radius: 4px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+ }
+
+.recipe-card img {
+    width:100%;
+    height:170px;
+    border-radius:4px;
+}
+
+.image-card {
+    position: relative;
+}
+
+.image-card img,
+.recipe-card h4,
+.image-card .ingredients {
+    opacity:1;
+    transition:0.5s ease;
+}
+
+.recipe-card h4 {
+    font-family: "Ramilias", Georgia, serif;
+    font-weight: 700;
+    font-size:22px;
+    margin: 10px 0px;
+    padding:10px;
+}
+
+.ingredients h5 {
+    margin: 0px;
+    padding:10px;
+    font-size: 18px;
+    font-family: "Ramilias", Georgia, serif;
+    font-weight: 500;
+}
+
+.ingredients ul {
+    font-size: 14px;
+    font-family: "Ramilias", Georgia, serif;
+    font-weight: 400;
+}
+
+.center-format {
+    transition: 0.5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    box-sizing: border-box;
+    overflow-y: auto;
+    pointer-events: none;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.center-text h5 {
+    font-family: "Ramilias", Georgia, serif;
+    font-weight: 500;
+}
+
+.center-text p,
+.center-text li {
+    font-family: "Ramilias", Georgia, serif;
+    font-weight: 400;
+}
+
+.center-text {
+    font-size: 14px;
+}
+
+/* PSEUDO CODE FOR CARDS */
+.recipe-card:hover {
+    transform: translateY(-4px) scale(1.02);
+    box-shadow: 5px 5px 5px black;
+}
+
+.recipe-card:hover img {
+    opacity:0.2;
+}
+.recipe-card:hover h4,
+.recipe-card:hover .ingredients {
+    opacity:0;
+}
+
+.recipe-card:hover .center-format {
+    opacity: 1;
+}
+
+/* CAROUSEL */
+.carousel-wrapper {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4rem;
+    margin-bottom: 3rem;
+}
+
+.my-carousel {
+    display:flex;
+    width:60%;
+    max-width: 900px;
+    margin:1rem auto;
+    overflow:hidden;
+    position:relative;
+    align-items: center;
+    gap:10px;
+    height:200px;
+}
+
+.carousel-box {
+    display:flex;
+    overflow-x: hidden;
+    scroll-behavior: auto;
+    height:200px;
+    width: 100%;
+    white-space: nowrap;
+}
+
+.carousel-slide {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 300px;
+    margin-right:1rem;
+    border-radius: 10px;
+    background:rgb(255, 255, 255);
+    box-shadow: 3px 3px 3px black;
+    transition: transform 0.3s ease;
+    position:relative;
+    align-self: center;
+}
+
+.carousel-slide:hover {
+    transform: scale(1.04);
+}
+
+.carousel-slide img {
+    display:block;
+    width:100%;
+    height:160px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.carousel-slide h3 {
+    position:absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0;
+    padding: 0.6rem 0.8rem;
+    border-radius: 0 0 10px 10px;
+    font-family: "Ramilias", Georgia, serif;
+    font-weight: 500;
+    font-size: 1.2rem;
+    color: #fff;
+    background-color: rgba(27, 76, 38, 0.423);
+    z-index: 3;
+    text-align: center;
+}
+
+.carousel-slide a {
+    text-decoration: none;
+}
+
+/* CAROUSEL NAV */
+.arrow {
+    background: rgba(255, 255, 255, 0.645);
+    color: rgb(27, 76, 38);
+    border: none;
+    cursor: pointer;
+    font-size: 2rem;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    padding: 0.3rem 0.8rem;
+    border-radius: 50%;
+}
+
+.arrow-left {
+    left: 0.5rem;
+}
+
+.arrow-right {
+    right: 0.5rem;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width:1284px) {
+    .my-carousel {
+        width: 80%;
+    }
+}
+
+@media (max-width:992px) {
+    .intro {
+        gap: 2rem;
+    }
+    .my-carousel {
+        width: 90%;
+    }
+    .carousel-slide {
+        flex: 0 0 220px;
+    }
+}
+
+@media (max-width:768px) {
+    .intro {
+        flex-direction: column;
+        gap: 2rem;
+        margin: 2rem auto;
+        padding: 0 1rem;
+    }
+
+    .intro img {
+        max-width: 60%;
+    }
+
+    .recipe-panel {
+        justify-content: center;
+    }
+
+    .my-carousel {
+        width: 100%;
+        height: 200px;
+    }
+}
+
+@media (max-width:480px) {
+    .welcome h1,
+    .recipe-box h1,
+    .carousel-wrapper h1 {
+        font-size: 1.5rem;
+        padding: 20px 0;
+    }
+    .intro {
+        padding: 0;
+    }
+    .intro .about {
+        font-size: 1rem;
+    }
+    .intro img {
+        max-width: 80%;
+    }
+    .recipe-card {
+        width: 100%;
+        height: auto;
+        margin-top: 30px;
+    }
+    .recipe-card img {
+        width: auto;
+        display: block;
+        margin: 0 auto;
+    }
+    .carousel-slide {
+        flex: 0 0 180px;
+    }
+    .carousel-slide img {
+        height: 130px;
+    }
+    .footer-nav {
+        display: none;
+    }
+}

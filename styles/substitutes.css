@@ -1,0 +1,367 @@
+@font-face {
+    font-family: Recoleta;
+    src: url(../fonts/Recoleta.otf) format("opentype");
+}
+@font-face {
+    font-family: "Ramilias";
+    src: url("../fonts/Ramilias-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Ramilias";
+    src: url("../fonts/Ramilias-Bold.ttf") format("truetype");
+    font-weight: 600;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: "Ramilias", Georgia, serif;
+    color: rgb(51, 81, 51);
+    line-height: 1.6;
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    margin:0px;
+}
+
+/* #region MAIN CONTENT STYLING */
+#substitutes-content {
+    display: flex;
+    flex-direction: column;
+    margin-bottom:50px;
+}
+
+.banner {
+    position:relative;
+    text-align: center;
+    margin:40px 0px;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    opacity: 0.95;
+}
+
+.quote {
+    width:900px;
+    max-width: 90%;
+    color: white;
+    font-family: "Recoleta", Georgia, serif;
+    text-align: center;
+    font-size:80px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+
+.banner button {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 8px;
+    padding:6px 16px;
+    background-color:white;
+    font-family: "Recoleta", Georgia, serif;
+    color: rgb(51, 81, 51);
+    border: 0px;
+}
+
+.banner button:hover {
+    background-color: rgb(51, 81, 51);
+    color: white;
+    border: solid 1px white;
+    cursor: pointer;
+}
+
+/* #region NEWSLETTER FORM */
+#emailContainer {
+    display: none;
+    position: absolute;
+    width: 90%;
+    max-width: 450px;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: "Recoleta", Georgia, serif;
+    text-align: center;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+#email {
+    width: 100%;
+    max-width: 400px;
+    padding: 6px;
+    border: 1px solid rgb(51, 81, 51);
+    border-radius: 4px;
+}
+
+#submitEmail {
+    padding: 4px 24px;
+    margin-top: 50px;
+    background-color: white;
+    color: rgb(51, 81, 51);
+    border: none;
+    border-radius: 4px;
+}
+
+#submitEmail:hover {
+    background-color: rgb(51, 81, 51);
+    color: white;
+    border: solid 1px white;
+    cursor: pointer;
+    cursor: pointer;
+}
+#newsletterMsg {
+    width: 90%;
+    max-width: 450px;
+    font-family: "Recoleta", Georgia, serif;
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    padding: 20px;
+    display: none;
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);   
+}
+
+/* #endregion */
+
+/* #region CARDS STYLING */
+.box {
+    margin: auto;
+    width: 90%;
+    max-width: 1284px;
+}
+
+.box h1 {
+    margin: 40px 20px 10px 20px;
+    font-family: "Ramilias", Georgia, serif;
+    font-weight: 600;
+    letter-spacing: 3px;
+    text-align: center;
+    color: rgb(0, 105, 62);
+}
+
+.box-1-cards,
+.box-2-cards,
+.box-3-cards,
+.box-4-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px 0;
+    border-top: 2px solid rgb(51, 81, 51);
+    border-bottom: 2px solid rgb(51, 81, 51);
+}
+
+ .my-card {
+    color: rgb(51, 81, 51);
+    background-color: white;
+    text-align: justify;
+    margin: 16px 12px;
+    width: 280px;
+    height: auto;
+    border-radius: 4px;
+    padding-bottom: 10px;
+    font-family: "Ramilias", Georgia, serif;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+ }
+
+.my-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 4px 4px 0 0;
+}
+
+.my-card h4 {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 8px 0px;
+    padding: 8px 10px;
+}
+
+.my-card p {
+    margin: 0px;
+    padding: 8px 10px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.4;
+}
+
+.my-card a {
+    margin: 0px;
+    padding:10px;
+    font-weight: 600;
+    font-size: 16px;
+    text-align: end;
+    text-decoration: none;
+    color: rgb(220, 114, 56);
+    margin-top: auto;
+}
+
+.image-card {
+    position: relative;
+}
+
+.image-card img {
+    opacity:1;
+    transition:0.5s ease;
+}
+
+.center-format {
+    transition:0.5s ease;
+    opacity:0;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    pointer-events: none;
+}
+
+.center-text {
+    font-size: 26px;
+    font-weight: 600;
+}
+
+h4 span {
+    display:block;
+}
+
+/* PSEUDO CODE FOR CARDS */
+.my-card:hover {
+    transform: translateY(-5px) scale(1.03);
+    box-shadow: 5px 5px 5px black;
+}
+
+.my-card:hover img {
+    opacity:0.2;
+}
+.my-card:hover h4,
+.my-card:hover p {
+    pointer-events: none;
+}
+.my-card:hover .center-format {
+    opacity: 1;
+}
+/* #endregion */
+
+/* #endregion */
+
+
+/* MEDIA QUERIES */
+
+/* media query for desktop/large screens */
+@media (max-width:1284px){
+    .quote {
+        font-size: 60px;
+        max-width: 80%;
+    }
+}
+
+/* media query for laptops/small screens */
+@media (max-width:992px){
+    .quote {
+        font-size: 48px;
+        max-width: 85%;
+    }
+    .banner button {
+        top: 70%;
+        padding:4px 14px;
+    }
+    #emailContainer {
+        top: 70%;
+    }
+    #submitEmail {
+        margin-top: 40px;
+    }
+    .my-card {
+        width: 45%;
+    }
+}
+
+/* media query for iPads/tablets */
+@media (max-width:768px){
+    .quote {
+        max-width: 90%;
+    }
+    .banner img {
+        height: 350px;
+    }
+    .box-1-cards,
+    .box-2-cards,
+    .box-3-cards,
+    .box-4-cards {
+        gap: 20px;
+    }
+    .my-card {
+        width: 80%;
+        margin: 12px auto;
+        padding: 1.5rem;
+        border-radius: 8px;
+        background-color: rgba(255, 255, 255, 0.322);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
+    }
+}
+
+/* media query for mobile devices */
+@media (max-width:480px){
+    .quote {
+        font-size: 36px;
+        max-width: 95%;
+    }
+    .banner img {
+        height: 260px;
+    }
+    .banner button {
+        font-size: 14px;
+    }
+    #email {
+        font-size: 14px;
+    }
+    #submitEmail {
+        margin-top: 30px;
+        padding: 2px 16px;
+        font-size: 14px;
+    }
+    .box h1 {
+        font-size: 1.5rem;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .my-card {
+        width: 90%;
+        margin: 10px auto;
+    }
+    .my-card h4 {
+        font-size: 18px;
+    }
+    .my-card p {
+        font-size: 14px;
+        line-height: 1.3;
+    }
+    .footer-nav {
+        display: none;
+    }
+}

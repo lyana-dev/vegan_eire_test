@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connect With Us | Vegan Éire</title>
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" as="style" onload="this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    </noscript> 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous" defer></script>
+    <link rel="stylesheet" href="../styles/contact.css">
+    <link rel="stylesheet" href="../styles/components/nav.css">
+    <!-- code to use icons shown by W3 -->
+    <script src="https://kit.fontawesome.com/17ef7a0e0f.js" crossorigin="anonymous" defer></script>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg bg-body-primary z-2">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html"><img src="../images/logo.jpg" height="90px" width="250px" alt="veganEIRE logo featuring dark green 'vegan' text and orange 'EIRE' with a green leaf above the 'E', symbolising a vegan company in Ireland"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto" id="nav-top">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./recipes.html">Recipes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./substitutes.html">Substitutes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./shop.html">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Social Media
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="https://www.instagram.com/eire_vegan/" target="_blank"
+                                    rel="noopener noreferrer">Instagram</a></li>
+                            <li><a class="dropdown-item" href="https://www.x.com/vegan_eire" target="_blank"
+                                    rel="noopener noreferrer">X</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Top Banner -->
+    <div id="container-2">
+        <img class="banner" src="../images/contact/callcenter.jpg" alt="people at desks with headsets working on computers in a bright office">
+    </div>
+
+    <!-- Main Content -->
+    <div id="wrapper1">
+        <section class="map-location">
+            <!-- form element used to create forms & linking it to our choice of external API (Web3Forms)-->
+                <h1>Our Location</h1> 
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4763.365795040375!2d-6.245567723753104!3d53.348932374530605!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670e8cd86e97e7%3A0x6d51b774ee7fa935!2sNational%20College%20of%20Ireland!5e0!3m2!1sen!2sie!4v1764455105227!5m2!1sen!2sie" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+        <section class="contact-form">
+            <h1>Contact Us</h1>
+            <form id="cform" >
+                <div class="input-control">
+                    <label for="username">First Name</label>
+                    <input id="username" name="username" type="text">
+                    <div id="error1"></div>
+                </div>
+                <div class="input-control">
+                    <label for="username">Last Name</label>
+                    <input id="username2" name="username2" type="text">
+                    <div id="error2"></div>
+                </div>
+                <div class="input-control">
+                    <label for="email">Email</label>
+                    <input id="email" name="username" type="text">
+                    <div id="error3"></div>
+                </div>
+                <div class="input-control">
+                    <label for="username">Your message</label>
+                    <textarea id="message" name="message" style="height:100px"></textarea>
+                    <div id="error4"></div>
+                    <button type="submit">Submit <img src="../images/contact/arrow.png" alt="an arrow pointing to the right"></button>
+                </div>
+            </form>
+            <div>
+                <p id="thankyou"></p>
+            </div>
+        </section>
+    </div>
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="copyright">
+            <h4> &copy; Vegan Éire </br> All rights reserved</h4>
+        </div>
+        <div class="footer-nav">
+            <ul class="navbar-nav" id="nav-bottom">
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./recipes.html">Recipes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./substitutes.html">Substitutes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./shop.html">Shop</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer-socials">
+            <a href="https://www.instagram.com/eire_vegan/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.x.com/vegan_eire" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-x-twitter"></i></a>
+        </div>
+    </footer>
+    <script src="../js/form.js"></script>
+</body>
+
+</html>

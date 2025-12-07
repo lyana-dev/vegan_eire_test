@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vegan Éire</title>
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" as="style" onload="this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    </noscript> 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous" defer></script>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/components/nav.css">
+    <!-- code to use icons shown by W3 -->
+    <script src="https://kit.fontawesome.com/17ef7a0e0f.js" crossorigin="anonymous" defer></script>
+</head>
+
+<body>
+    <!-- NAVIGATION -->
+    <nav class="navbar navbar-expand-lg bg-body-primary z-2">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="./index.html"><img src="./images/logo.jpg" height="90px" width="250px" alt="veganEIRE logo featuring dark green 'vegan' text and orange 'EIRE' with a green leaf above the 'E', symbolising a vegan company in Ireland"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto" id="nav-top">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pages/recipes.html">Recipes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pages/substitutes.html">Substitutes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pages/shop.html">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pages/contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Social Media
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="https://www.instagram.com/eire_vegan/" target="_blank"
+                                    rel="noopener noreferrer">Instagram</a></li>
+                            <li><a class="dropdown-item" href="https://www.x.com/vegan_eire" target="_blank"
+                                    rel="noopener noreferrer">X</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- CAROUSEL (with Bootstrap) -->
+    <div id="carouselExampleIndicators" class="carousel slide z-1">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./images/main/carousel-1.jpg" class="d-block w-100 img-fluid carousel-img" alt="a mason jar of green green smoothie surrounded by spinach, banana, lemon, chia seeds and green apple on a light background, with the text 'Green Friendly 100% Bio Always fresh, at veganEire'">
+            </div>
+            <div class="carousel-item">
+                <img src="./images/main/carousel-2.jpg" class="d-block w-100 img-fluid carousel-img" alt="a glass dessert cup filled with creamy banana smoothie, topped with raspberries, berry compote and mint leaves">
+            </div>
+            <div class="carousel-item">
+                <img src="./images/main/carousel-3.jpg" class="d-block w-100 img-fluid carousel-img" alt="fresh tomatoes on the vine, carrots, onions and coriander on a dark surface with water droplets">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!-- MAIN CONTENT -->
+     <div class="main-content">
+        <h1 class="slogan">Welcome and Join Our Healthy Journey!</h1>
+        <div class="shop-container">
+
+        <!-- FEATURED -->
+        
+        <!--Row 1-->
+            <div class="shop-row shop-items">
+
+                <!--Fading Image1-->
+                <div class="shop-col1 shop-item">
+                    <img src="./images/main/featured-1.jpg" class="shop-item-image1 fading" alt="a basket of bell peppers, cucumbers, cherry tomatoes and onion on rustic wood with text '20% OFF ALL veganEIRE PRODUCTS'">
+                </div>
+                <!--Fading Image2-->
+                <div class="shop-col1 shop-item">
+                    <img src="./images/main/featured-2.jpg" class="shop-item-image1 fading" alt="green leafy background with text 'ENJOY veganEIRE DEALS NEW ESSENTIALS'">
+                </div>
+            </div> <!--End of Featured-->
+        </div>
+
+            <!--Slogan2-->
+        <h1 class="slogan">An Extended Range of Quality Products</h1>
+        <div class="shop-container">
+        <!--Row 1-->
+            <div class="shop-row shop-items">
+                <!--Row 1 Item 1-->
+                <div class="shop-col shop-item">
+                    <span class="shop-item-title">Fresh Produce</span>
+                    <img src="./images/main/green-veg.jpg" class="shop-item-image" alt="assorted leafy greens, broccoli and green onions on a wooden surface">
+                    <p class="description">Vibrant leafy greens picked for peak freshness. Full of antioxidants and perfect for salads, smoothies - your everyday vitality.</p>
+                </div>
+                <!--Row 1 Item 2-->
+                <div class="shop-col shop-item">
+                    <span class="shop-item-title">Plant Proteins</span>
+                    <img src="./images/main/tempeh.jpg" class="shop-item-image" alt="sliced tempeh showing its compacted soybean texture on a cutting board">
+                    <p class="description">From tempeh to legumes, our protein-rich essentials fuel your body naturally. Absolutely no compromise on taste or texture.</p>
+                </div>
+                <!--Row 1 Item 3-->
+                <div class="shop-col shop-item">
+                    <span class="shop-item-title">Grains and Breads</span>
+                    <img src="./images/substitutes/bulgur.jpg" class="shop-item-image" alt="raw bulgur grain on a wooden spoon which is resting on top of raw bulgur">
+                    <p class="description">Hearty whole grains and artisan-style breads to nourish your day. Baked fresh every day.</p>
+                </div>
+            </div> <!--End of Row1-->
+            <!--Row 2-->
+            <div class="shop-row shop-items">
+                <!--Row 2 Item 1-->
+                <div class="shop-col shop-item">
+                    <span class="shop-item-title">Dairy Alternatives</span>
+                    <img src="./images/main/oat-milk.jpg" class="shop-item-image" alt="oats being strained into a glass with rolled oats and oat stalks nearby">
+                    <p class="description">Creamy, wholesome substitutes crafted from oats, nuts, soy and even flowers. Ideal for sipping, cooking, baking or frothing to perfection.</p>
+                </div>
+                <!--Row 2 Item 2-->
+                <div class="shop-col shop-item">
+                    <span class="shop-item-title">Pantry Staples</span>
+                    <img src="./images/substitutes/nutritional-yeast.jpg" class="shop-item-image" alt="a wooden spoon filled with yellow nutritional yeast flakes, with more spilling onto the surface">
+                    <p class="description">Your go-to vegan essentials, from oils and spices to pulses and sauces. We've got you covered for flavor and everyday cooking.</p>
+                </div>
+                <!--Row 2 Item 3-->
+                <div class="shop-col shop-item">
+                    <span class="shop-item-title">Snacks</span>
+                    <img src="./images/main/hummus.jpg" class="shop-item-image" alt="a bowl of hummus with fresh veggies and crackers arranged around it">
+                    <p class="description">Plant-based bites that actually satisfy - from grab-and-go nibbles to slow-down treats, all chosen to make snacking feel a little more intentional.</p>
+                </div>
+            </div> <!--End of Row2-->
+        </div>
+
+            <!--Slogan3-->
+        <h1 class="slogan">Meet Our Dedicated Team</h1>
+        <div class="shop-container">
+            <!--Team Members-->
+            <div class="shop-row shop-items team">
+                <!--Edyta-->
+                <div class="shop-col2 shop-item">
+                    <span class="shop-item-title">Edyta</span>
+                    <img src="./images/main/edyta.jpg" class="shop-item-image2" alt="Edyta, a Vegan Éire team member">
+                    <p class="description">Edyta is a highly creative, sharp, and pleasant person who consistently brings focus and clarity to her work. She demonstrates strong attention to details, communicates effectively and delivers results with professionalism. An excellent collaborator, she is genuinely a very good person to work with.</p>
+                </div>
+                <!--Lyana-->
+                <div class="shop-col2 shop-item">
+                    <span class="shop-item-title">Lyana</span>
+                    <img src="./images/main/lyana.jpg" class="shop-item-image2" alt="Lyana, a Vegan Éire team member">
+                    <p class="description">Lyana is hard-working, clever and consistently reliable. She contributes positively to any team with a clear, honest approach and a genuinely respectful attitude. A team player and very supportive, her empathy and positivity makes collaboration easy and productive and she is someone you can count on to deliver while maintaining strong professional relationships.</p>
+                </div>
+                <!--Isis-->
+                <div class="shop-col2 shop-item">
+                    <span class="shop-item-title">Isis</span>
+                    <img src="./images/main/isis.jpg" class="shop-item-image2" alt="Isis, a Vegan Éire team member">
+                    <p class="description">Isis is an extremely good hard-working person, dependable, serious and keen on excellence. She is social and communicative and she creates a good rapport with the entire team and introduced positive energy to any team. She is also well endowed in terms of leadership that does not fear taking initiative where necessary. She adores a defined course of action of all the things and thus working with her is an easy, well-structured and encouraging experience.</p>
+                </div>
+                <!--El-Donny-->
+                <div class="shop-col2 shop-item">
+                    <span class="shop-item-title">Elie</span>
+                    <img src="./images/main/elie.jpg" class="shop-item-image2" alt="Elie, a Vegan Éire team member">
+                    <p class="description">Elie is a strong, natural leader who consistently takes initiative and brings structure to the team. He excels at organising everyone, keeping the team aligned and ensuring the team stays focused on shared goals. His positivity and motivation lift the entire group and he leads with genuine respect for everyone he works with. Dedicated and dependable, Elie creates an environment where people feel supported, driven and able to do their best work.</p>
+                </div>
+            </div> <!--End of Team Members-->
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="copyright">
+            <h4> &copy; Vegan Éire </br> All rights reserved</h4>
+        </div>
+        <div class="footer-nav">
+            <ul class="navbar-nav" id="nav-bottom">
+                <li class="nav-item">
+                    <a class="nav-link active" href="./index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./pages/recipes.html">Recipes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="./pages/substitutes.html">Substitutes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./pages/shop.html">Shop</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./pages/contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer-socials">
+            <a href="https://www.instagram.com/eire_vegan/" target="_blank" rel="noopener noreferrer"><i
+                    class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.x.com/vegan_eire" target="_blank" rel="noopener noreferrer"><i
+                    class="fa-brands fa-x-twitter"></i></a>
+        </div>
+    </div>
+</body>
+
+</html>

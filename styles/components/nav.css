@@ -1,0 +1,118 @@
+
+
+@font-face {
+    font-family: Vogue;
+    src: url(../../fonts/Vogue.ttf) format("truetype");
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* TOP NAVIGATION BAR STYLING */
+nav.navbar .container-fluid {
+    padding-left:30px;
+    padding-right:30px;
+}
+
+.navbar-nav#nav-top {
+    font-size:1.5rem;
+    gap:2rem;
+    font-family: "Vogue" , Georgia, serif;
+    text-align: center;
+}
+
+.navbar-nav#nav-top .nav-link,
+.navbar-nav#nav-bottom .nav-link {
+    color:rgb(53, 94, 59);
+    padding-bottom: 0px;
+}
+
+.navbar-nav#nav-bottom {
+    flex-direction: row;
+    font-size:1.5rem;
+    gap:1rem;
+    font-family: "Vogue" , Georgia, serif;
+}
+
+.navbar-nav#nav-top .nav-item .nav-link.active,
+.navbar-nav#nav-bottom .nav-item .nav-link.active {
+    border-bottom: 2px solid rgb(220, 114, 56);
+}
+
+#nav-top .nav-item:hover {
+    transform: scale(1.1);
+    transition: ease 0.3s;
+}
+
+#nav-bottom .nav-item:hover {
+    transform: scale(1.1);
+    transition: ease 0.3s;
+}
+
+
+/* FOOTER STYLING */
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 6rem;
+    padding-bottom: 0;
+    margin: 0;
+    justify-content: center;
+    background-color: #f0f0f0;
+    padding-top: 40px;
+}
+
+.footer h4 {
+    color:rgb(53, 94, 59);
+    font-size:1.25rem;
+    font-family: "Vogue" , Georgia, serif;
+}
+
+.footer-socials a i {
+    font-size:2rem;
+    color:rgb(53, 94, 59);
+    margin: 0rem 1rem;
+}
+
+.footer-socials a i:hover {
+    transform: scale(1.2);
+    transition:0.8s ease;
+}
+
+.copyright,
+.footer-socials {
+    flex:1;
+    justify-items: center;
+    text-align: center;
+    padding-bottom:2rem;
+}
+
+.footer-nav {
+    flex:2;
+    justify-items: center;
+}
+
+
+@media (max-width:1200px){
+  .navbar-nav#nav-top {
+        gap:1rem;
+    }
+}
+
+/* MEDIA QUERY TO REMOVE HOVER TRANSFORM WHEN NAV BAR COLLAPSES */
+@media (max-width:992px){
+    #nav-top .nav-item:hover {
+        transform: none;
+        transition: none;
+        /* border-bottom: none; */
+    }
+
+    .copyright,
+    .footer-nav,
+    .footer-socials {
+        flex: 0 1 auto;
+        width:100%;
+        padding-bottom:2rem;
+    }
+}
