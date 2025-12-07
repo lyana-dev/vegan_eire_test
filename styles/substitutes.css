@@ -43,7 +43,7 @@ body {
 .banner {
     position:relative;
     text-align: center;
-    margin:40px 0px;
+    margin-bottom: 40px;
 }
 
 .banner img {
